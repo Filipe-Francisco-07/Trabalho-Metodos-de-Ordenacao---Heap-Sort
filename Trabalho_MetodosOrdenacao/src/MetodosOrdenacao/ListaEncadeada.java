@@ -36,6 +36,7 @@ public class ListaEncadeada {
 		}
 		
 		novoNodo.setProx(atual);
+		if(anterior != null)
 		anterior.setProx(novoNodo);
 	}
 	

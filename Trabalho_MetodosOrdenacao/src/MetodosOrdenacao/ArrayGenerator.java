@@ -30,7 +30,7 @@ public class ArrayGenerator {
 		Random r = new Random();
 		
 		for(int i = 0; i < array.length; i++) {
-			int j = r.nextInt(0,array.length);
+			int j = r.nextInt(1,array.length);
 			array[i] = j;
 		}	
 		
