@@ -21,7 +21,7 @@ public class Main {
 		
 		long time1 = System.currentTimeMillis();
 		
-		qs.partition(array,0,array.length-1);
+		hs.heapSort(array);
 		
 		long time2 = System.currentTimeMillis();
 		
@@ -34,8 +34,8 @@ public class Main {
 		System.out.println("Tempo de execução: "+ tempoExecucao+ " ms.");
 		System.out.println("Tempo de execução: "+ (tempoExecucao/1000)+ " segundos.");
 		System.out.println("Tempo de execução: "+ (tempoExecucao/60000)+ " minutos.");
-		System.out.println("Trocas: "+ qs.getTrocas());
-		System.out.println("Comparacoes: "+ qs.getComparacoes());
+		System.out.println("Trocas: "+ hs.getTroca());
+		System.out.println("Comparacoes: "+ hs.getComparacao());
 		
 	}
 
